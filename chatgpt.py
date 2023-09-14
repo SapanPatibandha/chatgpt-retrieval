@@ -16,12 +16,14 @@ import constants
 os.environ["OPENAI_API_KEY"] = constants.APIKEY
 
 # Enable to save to disk & reuse the model (for repeated queries on the same data)
-PERSIST = False
+PERSIST = True
 
 query = None
 if len(sys.argv) > 1:
   query = sys.argv[1]
-
+else:
+  query = "Who is Sapan Patibandha"
+  
 if PERSIST and os.path.exists("persist"):
   print("Reusing index...\n")
   vectorstore = Chroma(persist_directory="persist", embedding_function=OpenAIEmbeddings())

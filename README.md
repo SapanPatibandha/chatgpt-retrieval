@@ -26,3 +26,25 @@ Test reading `data/cat.pdf` file.
 > python chatgpt.py "what is my cat's name"
 Your cat's name is Muffy.
 ```
+
+## Some other helpful packages might need. 
+
+```
+python.exe -m pip install --upgrade pip
+
+pip install langchain
+
+pip install openai
+
+pip install openai chromadb
+
+pip install tiktoken
+
+pip install chromadb
+
+pip install "unstructured[pdf]"
+
+pip install unstructured
+
+```
+
